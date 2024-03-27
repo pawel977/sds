@@ -1,0 +1,23 @@
+<header>
+  <div>
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+  <div class="overlay"></div>
+
+  <!-- The HTML5 video element that will create the background video on the header -->
+  <video playsinline autoplay loop [muted]="'muted'">
+    <source src="assets/video/movie.mp4" type="video/mp4">
+  </video>
+
+  <!-- The header content -->
+  <div class="container h-100">
+
+
+    <div class="d-flex h-100 text-center align-items-center justify-content-center">
+      <div class="text-white logo">
+        <img src="/assets/sds_logo_male.png" alt="logo">
+      </div>
+    </div>
+  </div>
+</header>

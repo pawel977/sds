@@ -1,0 +1,14 @@
+<div>
+  <h2>Dołacz do nas!</h2>
+  <div><p>Napisz do nas, skontaktujemy się z tobą w sprawie rekrutacji.</p></div>
+  <section>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="email" class="form-control  my-1" aria-describedby="emailHelp" placeholder="Wpisz email"
+               formControlName="email">
+        <p class="d-block text-danger" [hidden]="form.valid || form.pristine">Musisz wpisać Mail!</p>
+      </div>
+      <button type="submit" class="btn btn-primary mt-2">Wyślij</button>
+    </form>
+  </section>
+</div>
