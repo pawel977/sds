@@ -3,35 +3,28 @@ main {
   position: relative;
   margin-bottom: 120px;
 }
-.slider-container {
-  position: relative;
-  min-height: 25rem;
-  width: 100%;
-  height: 100%;
-}
+
 
 .img-slided {
+ height: 600px;
   border-radius: 1em;
-  width: 100vw;
-  min-height: 25em;
-  height: 50vh;
-
+  width: 100%;
+  min-width: 370px;
 
   background-image: url("/assets/dcs.png");
   background-repeat: no-repeat;
-  background-position: bottom;
   background-attachment: fixed;
-  background-size: contain;
+
+  background-size: cover;
   clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%)
 }
 
 .footer {
   position: fixed;
-  bottom: 0;
   width: 100vw;
   min-width: 370px;
   height: 120px;
-  overflow-x: hidden;
+  bottom: 0;
 
 }
 
